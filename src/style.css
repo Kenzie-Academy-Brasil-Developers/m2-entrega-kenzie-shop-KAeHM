@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+body, header, main, figure, img, div, span, p, button, h2{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    background-color: floralwhite;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#container header{
+    height: 40px;
+    width: 100%;
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 9px 0px #000000;
+}
+
+#container header figure{
+    height: 60px;
+    width: 80px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    border-radius: 16px;
+    box-shadow: 0px 10px 13px -7px #000000, -9px -16px 14px 3px rgba(0,0,0,0);
+}
+
+#container header figure img{
+    height: inherit;
+    width: inherit;
+    position: fixed;
+    border-radius: 16px;
+}
+
+#container main{
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#container main .card{
+    margin: 10px 20px;
+    border: 2px solid burlywood;
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 450px;
+}
+
+.card .card__img{
+    margin-top: 10px;
+}
+
+.card .card__img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+
+.card .card__classificacao img{
+    width: 100px;
+    height: 25px;
+}
+
+.card .card__descricao{
+    margin-left: 20px;
+    font-display: center;
+    font-size: small;
+}
+
+.card .card__preco{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    font-size: larger;
+    font-weight: bold;
+    width: 100%;
+}
+
+.card .card__preco .card__preco--oldPrice{
+    font-size: smaller;
+    text-decoration: line-through;
+
+}
+
+.card .card__button{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.card .card__button button{
+    background-color: bisque;
+    border-top: 2px solid burlywood;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    font-weight: bolder;
+}
